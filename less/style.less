@@ -1,0 +1,697 @@
+@import url(../../reset.less);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: 'Forum', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: calc(40 / 20 * 100%);
+    letter-spacing: 2px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+}
+._container {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+button {
+    cursor: pointer;
+}
+
+// ______________TEXT-BLOCK______________
+
+.text-block {
+    text-align: center;
+    padding: 20px 0;
+}
+.text-block__title {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 0 61px;
+}
+.text-block__title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -20px;
+    width: 50px;
+    height: 1px;
+    background-color: #0C0C0E;
+}
+.text-block__subtitle {
+    font-family: 'Inter', sans-serif;
+}
+
+// ______________HEADER______________
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: 50;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+}
+.header__title {
+    font-size: 30px;
+    color: #fff;
+}
+.header__menu {
+}
+
+// ______________MENU-BLOCK______________
+
+.menu-block {
+    display: flex;
+}
+.menu-block>*:not(:last-child) {
+    margin: 0 40px 0 0;
+}
+.menu-block__list {
+    display: flex;
+    align-items: center;
+}
+.menu-block__list>*:not(:last-child) {
+    margin: 0 30px 0 0;
+}
+.menu-block__item {
+}
+.menu-block__link {
+    font-family: 'Inter';
+    color: #fff;
+    transition: all 0.3s;
+}
+.menu-block__link:hover {
+    color: #BB945F;
+}
+
+// ______________PAGE______________
+
+.page {
+}
+.page__welcome {
+    padding: 20px 0 40px;
+}
+.page__about {
+    padding: 20px 0 40px;
+}
+.page__favorites {
+    padding: 20px 0 40px;
+}
+.page__shop {
+    padding: 20px 0 40px;
+}
+.page__contact {
+    padding: 20px 0 40px;
+}
+.page__card {
+    padding: 20px 0 40px;
+}
+
+// ______________WELCOME______________
+
+.welcome {
+    position: relative;
+}
+.welcome__container {
+    padding: 310px 0 160px;
+}
+.welcome__content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 600px;
+    min-height: 220px;
+    padding: 35px 40px;
+    font-size: 40px;
+    line-height: calc(50 / 40 * 100%);
+    letter-spacing: 2px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+// ______________ABOUT______________
+
+.about {
+}
+.about__container {
+}
+.about__text-block {
+}
+.image-slider {
+}
+
+// ______________SWIPER-SLIDER______________
+
+.image-slider { 
+}
+.swiper-pagination {
+}
+.image-slider .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: #BB945F;
+}
+.image-slider__wrapper {
+    padding: 0 0 60px;
+}
+.image-slider__slider {
+}
+.image-slider__item {
+}
+.image-slider__item img {
+    max-width: 100%;
+}
+
+// ______________FAVORITES______________
+
+.favorites {
+}
+.favorites__text-block {
+}
+.favorites__seasons {
+}
+.favorites__book-block {
+}
+
+// ______________SEASONS______________
+
+.seasons {
+}
+.seasons__title {
+    font-family: 'Inter';
+    font-weight: 700;
+    line-height: calc(24.2 / 20 * 100%);
+}
+.seasons__list {
+    display: flex;
+    padding: 40px 0;
+}
+.seasons__list>*:not(:last-child) {
+    margin: 0 90px 0 0;
+}
+.seasons__item {
+}
+.seasons__item li {
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.seasons__item label:checked {
+    font-weight: 700;
+}
+
+// ______________BOOK-BLOCK______________
+
+.book-block {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 40px 0 0;
+}
+.book-block__item {
+    flex: 0 0 550px;
+    position: relative;
+    border: 1px solid #000;
+    padding: 15px 175px 20px 20px;
+}
+.book-block__content {
+    // position: relative;
+    height: 100%;
+}
+.book-block__item:last-child {
+    margin: 40px 0 0;
+}
+.book-block__item:nth-child(3) {
+    margin: 40px 0 0;
+}
+.book-block__item img {
+    position: absolute;
+    bottom: -1px;
+    right: -40px;
+    z-index: 10;
+}
+.book-block__body {
+}
+.book-block__body>*:not(:last-child) {
+    margin: 0 0 20px;
+}
+.book-block__text {
+    position: relative;
+}
+.book-block__text:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background-color: #BB945F;
+}
+.book-block__title {
+    font-family: 'Inter', sans-serif;
+}
+.book-block__subtitle {
+    font-family: 'Inter', sans-serif;
+}
+.book-block__description {
+    padding: 0 0 20px;
+    font-family: 'Inter', sans-serif;
+    line-height: calc(40 / 20 * 100%);
+}
+.book-block__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    width: 75px;
+    height: 30px;
+    border: 1px solid #0C0C0E;
+    border-radius: 2px;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    transition: .3s;
+}
+.book-block__btn:hover {
+    background-color: #BB945F;
+    color: #fff;
+}
+// ______________SHOP______________
+
+.shop {
+}
+.shop__container {
+}
+.shop__body {
+}
+.shop__text-block {
+}
+.shop__content {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 0;
+}
+.shop__coffee {
+}
+.shop__desserts {
+}
+
+// ______________COFFEE______________
+
+.coffee {
+    flex: 0 1 438px;
+}
+.coffee>*:not(:last-child) {
+    margin: 0 0 40px;
+}
+.coffee__list>*:not(:last-child) {
+    margin: 0 0 40px;
+}
+.coffee__title {
+    font-size: 40px;
+    color: #BB945F;
+}
+.coffee__list {
+}
+.coffee__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+.coffee__item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: -181px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100px;
+    height: 1px;
+    background-color: #BB945F;
+}
+.coffee__name {
+    font-family: 'Inter', sans-serif;
+}
+.coffee__cost {
+}
+
+// ______________DESSERTS______________
+
+.desserts {
+    flex: 0 1 482px;
+}
+.desserts>*:not(:last-child) {
+    margin: 0 0 40px;
+}
+.desserts__title {
+    font-size: 40px;
+    color: #BB945F;
+}
+.desserts__list {
+}
+.desserts__list>*:not(:last-child) {
+    margin: 0 0 40px;
+}
+.desserts__item {
+}
+.desserts__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+.desserts__item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: -181px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100px;
+    height: 1px;
+    background-color: #BB945F;
+}
+.desserts__name {
+    font-family: 'Inter', sans-serif;
+}
+.desserts__name {
+}
+.desserts__cost {
+}
+
+// ______________CONTACT______________
+
+.contact {
+}
+.contact__container {
+}
+.contact__text-block {
+}
+.contact__body {
+    display: flex;
+    justify-content: space-between;
+}
+.contact__info {
+}
+.contact__info>*:not(:last-child) {
+    margin: 0 0 40px;
+}
+.contact__location {
+}
+.contact__staff {
+}
+
+// ______________LOCATION______________
+
+.location {
+}
+.location>*:not(:last-child) {
+    margin: 0 0 40px;
+}
+.location__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.location__phone {
+}
+
+// ______________PHONE______________
+
+.phone {
+}
+.phone>*:not(:last-child) {
+    margin: 0 0 20px;
+}
+.phone__item {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: calc(40 / 20 * 100%);
+}
+
+// ______________STAFF______________
+
+.staff {
+}
+.staff>*:not(:last-child) {
+    margin: 0 0 20px;
+}
+.staff__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.staff__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.staff__subtitle span {
+    // font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+// ______________CARD______________
+
+.card {
+}
+.card__container {
+}
+.card__text-block {
+}
+.card__body {
+    display: flex;
+    justify-content: space-between;
+}
+.card__library {
+}
+.card__get {
+}
+
+// ______________LIBRARY-CARD______________
+
+.library-card {
+    flex: 0 1 600px;
+}
+.library-card__title {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    line-height: calc(36.31 / 30 * 100%);
+    padding: 0 0 30px;
+    // margin: 0 auto;
+    text-align: center;
+}
+.library-card__form {
+}
+
+// ______________FORM-CARD______________
+
+.form-card {
+    padding: 20px 20px 40px 20px;
+    border: 3px solid #BB945F;
+}
+.form-card__body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 25px 20px;
+    background-color: #BB945F;
+}
+.form-card__body>*:not(:last-child) {
+    margin: 0 0 25px;
+}
+.form-card__title {
+    font-size: 30px;
+    line-height: calc(50 / 30 * 100%);
+}
+.form-card__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 520px;
+    height: 66px;
+    border-radius: 10px;
+    padding: 10px 0 0;
+}
+.form-card__input::placeholder {
+    padding: 0 0 0 20px;
+    font: 30px 'Forum', sans-serif;
+    line-height: calc(50 / 30 * 100%);
+    letter-spacing: 2%;
+}
+.form-card__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 242px;
+    height: 44px;
+    border: 1px solid #0C0C0E;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: calc(24.2 / 20 * 100%);
+    margin: 20px auto 0;
+    background-color: transparent;
+}
+
+// ______________GET-CARD______________
+
+.get-card {
+    flex: 0 1 456px;
+    text-align: right;
+}
+.get-card>*:not(:last-child) {
+    margin: 0 0 35px;
+}
+.get-card__title {
+    font-size: 30px;
+    line-height: calc(33.12 / 30 * 100%);
+    letter-spacing: 2%;
+}
+.get-card__subtitle {
+    font-family: 'Inter', sans-serif;
+}
+.get-card__buttons {
+    display: inline-flex;
+    // align-items: center;
+    text-align: right;
+}
+.get-card__buttons>*:not(:last-child) {
+    margin: 0 20px 0 0;
+}
+.get-card__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 75px;
+    height: 30px;
+    border: 1px solid #0C0C0E;
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: calc(24.2 / 20 * 100%);
+    background-color: transparent;
+}
+
+// ______________FOOTER______________
+
+.footer {
+    position: relative;
+}
+.footer:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0C0C0E;
+    z-index: -1;
+}
+.footer__container {
+}
+.footer__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 30px 0;
+    position: relative;
+}
+.footer__body:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.footer__content {
+    color: #fff;
+}
+.footer__content>*:not(:last-child) {
+     margin: 0 0 10px;
+}
+.footer__location {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: calc(20 / 15 * 100%);
+    font-weight: 400;
+}
+.footer__links {
+    display: flex;
+}
+.footer__links li:not(:last-child) {
+    margin: 0 15px 0 0;
+}
+.footer__item {
+}
+.footer__days {
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: calc(20 / 15 * 100%);
+    color: #fff;
+}
+.footer__school {
+    padding: 44px 0;
+}
+
+// ______________SCHOOL______________
+
+.school {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.school__year {
+    font: 20px 'Inter', sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.school__name {
+    font: 20px 'Inter', sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.school__username {
+    font: 20px 'Inter', sans-serif;
+    line-height: calc(40 / 20 * 100%);
+    letter-spacing: 2px;
+    color: #fff;
+}
+.school__username a {
+    color: #fff;
+}
